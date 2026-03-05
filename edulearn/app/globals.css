@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-bg-page: var(--bg-page);
+  --color-bg-card: var(--bg-card);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-border-main: var(--border-main);
+}
+
+:root {
+  --primary: #4f46e5; /* indigo-600 */
+  --accent: #ef4444; /* red-500 */
+  --bg-page: #f9fafb; /* gray-50 */
+  --bg-card: #ffffff;
+  --text-main: #111827; /* gray-900 */
+  --text-muted: #6b7280; /* gray-500 */
+  --border-main: #e5e7eb; /* gray-200 */
+}
+
+.theme-dark {
+  --primary: #6366f1; /* indigo-500 */
+  --accent: #f87171; /* red-400 */
+  --bg-page: #111827; /* gray-900 */
+  --bg-card: #1f2937; /* gray-800 */
+  --text-main: #f9fafb; /* gray-50 */
+  --text-muted: #9ca3af; /* gray-400 */
+  --border-main: #374151; /* gray-700 */
+}
+
+.theme-dora {
+  --primary: #00A0E9;
+  --accent: #E60012;
+  --bg-page: #f0f9ff; /* blue-50/20 approx */
+  --bg-card: #ffffff;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --border-main: #dbeafe; /* blue-100 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-system {
+    --primary: #6366f1;
+    --accent: #f87171;
+    --bg-page: #111827;
+    --bg-card: #1f2937;
+    --text-main: #f9fafb;
+    --text-muted: #9ca3af;
+    --border-main: #374151;
+  }
+}
